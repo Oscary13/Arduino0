@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaMQTT.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Blue" Padding="15" CornerRadius="0">
+            <Label Text="FOCO DE LA COSINA" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button x:Name="btnArmar" Text="Encender" CornerRadius="10" Clicked="btnEnsenderFCosina_Clicked" BackgroundColor="Green"/>
+        <Button x:Name="btnDesarmar" Text="Apagar" CornerRadius="10" Clicked="btnApagarFCosina_Clicked" BackgroundColor="Red"/>
+        <Label x:Name="lblTexto" Text="" FontSize="Title" TextColor="Yellow" LineBreakMode="WordWrap" HorizontalTextAlignment="Center"/>
+
+        <Frame BackgroundColor="BlueViolet"  Padding="15" CornerRadius="0">
+            <Label Text="FOCO DEL BAÑO" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button x:Name="btnEncendidoFbano" Text="Encender" CornerRadius="10" Clicked="btnEnsenderFBano_Clicked" BackgroundColor="Green"/>
+        <Button x:Name="btnApagadoFBano" Text="Apagar" CornerRadius="10" Clicked="btnApagarFBano_Clicked" BackgroundColor="Red"/>
+        <Label x:Name="lblTexto3" Text="" FontSize="Title" TextColor="Yellow" LineBreakMode="WordWrap" HorizontalTextAlignment="Center"/>
+
+        <Frame BackgroundColor="CadetBlue"  Padding="15" CornerRadius="0">
+            <Label Text="FOCOS DEL ESTACIONAMIENTO" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button x:Name="btnEncendidoFocos" Text="Encender" CornerRadius="10" Clicked="btnEnsenderFocos_Clicked" BackgroundColor="Green"/>
+        <Button x:Name="btnApagadoFocos" Text="Apagar" CornerRadius="10" Clicked="btnApagarFocos_Clicked" BackgroundColor="Red"/>
+        <Label x:Name="lblTexto4" Text="" FontSize="Title" TextColor="Yellow" LineBreakMode="WordWrap" HorizontalTextAlignment="Center"/>
+
+        <Frame BackgroundColor="Gold"  Padding="15" CornerRadius="0">
+            <Label Text="CALCULAR TEMPERATURA Y HUMEDAD" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+        </Frame>
+        <Button x:Name="btnTemperaturaHumedad" Text="Calcular" CornerRadius="10" Clicked="btnTemperaturaHumedad_Clicked" BackgroundColor="Green"/>
+        <Label x:Name="lblTexto5" Text="" FontSize="Title" TextColor="Yellow" LineBreakMode="WordWrap" HorizontalTextAlignment="Center"/>
+
+        <Frame BackgroundColor="LimeGreen" Padding="15" CornerRadius="0">
+            <Label Text="MENSAJES RESIVIDOS" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+        </Frame>
+        <Label x:Name="lblTexto2" Text="" FontSize="30" TextColor="Yellow" LineBreakMode="WordWrap" HorizontalTextAlignment="Center" />
+    </StackLayout>
+</ContentPage>
